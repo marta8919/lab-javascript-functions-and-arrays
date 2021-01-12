@@ -90,13 +90,12 @@ const wordsUnique = [
   'bring'
 ];
 
-
-
-function uniquifyArray(arr){
-  if ( arr.length === 0){
+function uniquifyArray(arr) {
+  if (arr.length === 0){
     return null;
   }
-
+  
+  return arr.filter((element, index) => arr.indexOf(element) !== index);
 }
 
 // Iteration #6: Find elements
