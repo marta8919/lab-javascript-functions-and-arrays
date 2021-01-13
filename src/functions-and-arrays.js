@@ -1,9 +1,17 @@
 // Iteration #1: Find the maximum
-function maxOfTwoNumbers (num1, num2){
-  if (num1 > num2){
-      return num1;
+// function maxOfTwoNumbers (num1, num2){
+//   if (num1 > num2){
+//       return num1;
+//   } else {
+//       return num2;
+//   }
+// };
+
+function maxOfTwoNumbers (num1, num2) {
+  if (num1 > num2) {
+  return num1;
   } else {
-      return num2;
+    return num2
   }
 };
 
@@ -87,6 +95,16 @@ const wordsUnique = [
   'simple',
   'bring'
 ];
+
+//solution provided by Manish
+// function uniquifyArray(arr){
+//   let uniqueArr= [];
+//   for (let i = 0; i < arr.length; i++){
+//     if(!uniqueArr.includes(arr[i])){
+//       uniqueArr.push(arr[i])
+//     }
+//   }
+// }
 
 function uniquifyArray(arr) {
   if (arr.length === 0) {
